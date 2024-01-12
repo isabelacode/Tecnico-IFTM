@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(230, 156, 156);
+}
+.container{
+    background-color: rgb(214, 60, 60);
+    width: 90%;
+    height: 50vh;
+    margin: 25vh auto;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: row;
+}
+/* ITEM: define o quanto de espaço será usado */
+.item{
+    background-color: rgb(195, 219, 241);
+    margin: 0.5em;
+}
+
+.um{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    /* align-self: flex-end; */
+}
+
+.dois{
+    flex-grow: 1;
+    flex-basis: 1;
+    flex-basis: 300px;
+    /* align-self: center; */
+
+}
+
+.tres{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    /* align-self: flex-start; */
+}

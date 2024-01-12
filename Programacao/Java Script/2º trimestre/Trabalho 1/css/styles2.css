@@ -1,0 +1,29 @@
+body {
+    background-image: linear-gradient(to right, #e4e3f3, #c9cdfc, #879bce);
+}
+
+h1 {
+    margin: 0;
+    color: #131c31;
+}
+
+li a {
+    color: #131c31;
+}
+
+.dropdown-content {
+    background-image: linear-gradient(to right, #e4e3f3, #c9cdfc);
+}
+
+.dropdown-content a {
+    color: #131c31;
+}
+
+.temp1 {
+    margin: 1em;
+}
+
+.temp1 h1 {
+    margin-left: calc(50% - 2em);
+    margin-bottom: 1em;
+}

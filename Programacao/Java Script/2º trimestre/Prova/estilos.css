@@ -1,0 +1,82 @@
+* {
+    background-color: #efd1d1;
+}
+
+:root {
+    --base: #eee2e2;
+    --botao: #e2c3c3;
+}
+
+.a {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#txtMsg {
+    width: 850px;
+    margin-bottom: 1em;
+    border: 2px solid #000;
+    border-radius: 0.4em;
+    background-color: var(--base);
+}
+
+#btnEnviar {
+    margin: 1em;
+    margin-right: 9em;
+    border-radius: 1em;
+    min-width: 90px;
+    background-color: var(--botao);
+}
+
+.b {
+    border: 2px solid #000;
+    padding: 1em;
+    min-width: 500px;
+    min-height: 100px;
+    border-radius: 0.4em;
+    background-color: var(--base);
+}
+
+.c {
+    margin-left: 0.5em;
+    border: 2px solid #000;
+    padding: 1em;
+    min-width: 500px;
+    min-height: 100px;
+    border-radius: 0.4em;
+    background-color: var(--base);
+
+}
+
+.bEc {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+#btnLimpar {
+    margin: 1em;
+    margin-right: 9em;
+    margin-left: 9em;
+    border-radius: 1em;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: var(--botao);
+}
+
+#btnCopiar {
+    margin-right: 9em;
+    margin: 1em;
+    border-radius: 1em;
+    min-width: 150px;
+    max-width: 200px;
+    background-color: var(--botao);
+
+}

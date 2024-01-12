@@ -1,0 +1,34 @@
+!(Precisa ter instalado o NODE JS no seu computador)!
+-> Abrir a pasta do projeto no VS Code
+-> Abrir o terminal e digitar os comandos:
+-> npm init
+-> Preencher as informações solicitadas
+-> Instalar os pacotes: express, cors e nodemon no npm
+-> npm i express cors nodemon
+-> No arquivo "package.json", insira a seguinte linha dentro de "scripts":
+        "test": "echo \"Error: no test specified\" && exit 1",    <--- Lembre-se da vírgula
+        "start": "nodemon index.js"
+-> nodemon serve para não ter q derrubar e subir o servidor toda hora
+-> Crie o arquivo "index.js" com o seguinte conteúdo:
+    let express = require('express');
+    let cors = require('cors');
+    let porta = 3000;
+
+    // Iniciar o servidor
+    let app = express();
+
+    //Configurar o servidor
+    app.use(cors()); // 
+    app.use(express.json());
+
+    //Rotas
+    app.get('/', (req, res) => {
+        return res.status(200).json({ msg: 'Rota inicial' });
+    })
+
+    app.listen(porta, ()) => {
+        console.log(`Rodando em http://localhost:${porta}`);
+    }
+
+
+-> npm start

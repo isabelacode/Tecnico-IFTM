@@ -1,0 +1,115 @@
+/*comentarios*/
+
+/*
+https://coolors.co/palettes/trending
+
+Seleciona todas as TAGs desse topo:
+seletor{
+    propriedade1: valor1;
+    propriedade2: valor2;
+}
+
+Seleciona um ÚNICO elemento como este nome /id
+No html  usa-se o atributo ID
+#nomeDoElemento{
+    propriedade1: valor1;
+    propriedade2: valor2;
+}
+
+Seleciona um GRUPO de elementos no html usa-se o atributo CLASS
+.nomeDOGrupo{
+    propriedade1: valor1;
+    propriedade2: valor2;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sono:wght@200;400;500&display=swap');
+
+
+body{ 
+    /*cor de fundo*/
+    background-color:  #FAD988;
+    font-family: "Ariel";
+}
+
+h1{
+
+    color: #6d2f02;
+    font-family: "Sono";
+}
+h2{
+    color: #ee6901;
+    font-family: "Montserrat";
+}
+h3{
+    color: #000000;
+}
+
+.menu{
+    background-color:#6d2f02 ;
+    color:#e9edc9;
+    text-decoration: none;
+    font-weight: 700; /*400 normal, 700 negrito*/
+    display: inline-block; /* depois eu explico*/
+    padding: 10px 20px; /*espaçamento interno*/
+    margin: 5px;/*espaçamento externo*/
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+/*quando o usuário colocar o mouse
+ em cima */
+.menu:hover{
+   background-color: #ee6901; 
+}
+
+#primeiro{
+    color: #784315;
+    font-weight: 700;
+    text-align:  center;
+}
+
+#pudim{
+    width: 400px;
+    /*border-color: #6d2f02; /*Cor da borda*/
+    border-width: 5px; /*Largura da foto*/
+    border-style:double;
+   /* border: 5px double #6d2f02; opcional fazer desse jeito,
+    isso e um atalho*/
+
+   /* border-top-color:#000000 ;
+    border-left-style:solid ;*/
+
+    border-radius: 20px;
+}
+
+tr.ímpar{
+    background-color: #faedcd;
+    border:5px;
+    border-color: #000000;
+    border-style: double;
+   
+
+
+}
+
+tr.par{
+    background-color: #a9845a;
+    border:5px;
+    border-color: #000000;
+    border-style: double;
+   
+    
+}
+#calorias{
+    border: 5px double #000000;
+}
+
+ul li.ímpar{
+    text-transform: uppercase;
+}
+
+ul li.par{
+    text-transform: lowercase;
+}

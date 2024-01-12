@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+:root {
+  --main-color: #be9c79;
+  --black: #333333;
+  --white: #ffffff;
+  --light-color: #666666;
+  --border: 0.2rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(fundo1.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #091023;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+i img {
+  height: 40px;
+  position: relative;
+  left: 0px;
+  display: flex;
+  justify-content: left;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c6caf0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(120, 140, 194, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.introducao {
+  width: 100vh;
+  margin: 3em;
+  padding: 0.4em;
+  color: #e6e4ee;
+}
+
+h1 {
+  font-family: 'Slabo 27px', serif;
+  margin: 2em;
+  margin-top: 4em;
+  color: #091023;
+}
+
+#sinopse {
+  color: #111f46;
+  margin: 3em;
+  padding: 1em;
+  max-width: 70%;
+  background-color: rgb(200, 204, 252, 0.9);
+  box-shadow: 10px 10px 8px rgb(212, 212, 244, 0.1);
+}
+
+.trailers {
+  margin: 3em;
+}
+
+.trailers video {
+  width: 750px;
+  margin: 0 auto;
+  display: block;
+}
+
+.trailers h1 {
+  margin-left: calc(50% - 3em);
+}
+
+.informacoes {
+  color: #111f46;
+  margin: 3em;
+  padding: 1em;
+  max-width: 60%;
+  background-color: rgb(200, 204, 252, 0.7);
+  box-shadow: 10px 10px 8px rgb(212, 212, 244, 0.1);
+}
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.filmeEOVAs {
+  margin: 1em;
+}
+
+.filmeEOVAs h1 {
+  margin-left: calc(50% - 3em);
+}
+
+.personagens {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+#personagem {
+  margin: 50px;
+  padding: 15px;
+  background-color: rgb(27, 49, 103, 0.9);
+  border-radius: 10px;
+  width: 320px;
+}
+
+#foto {
+  border: 2px solid black;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#personagem h1 {
+  font-size: medium;
+  margin-left: calc(50% - 50px);
+}
+
+.curiosidades {
+  margin: 1em;
+}
+
+.curiosidades h1 {
+
+  margin-left: calc(50% - 3em);
+}
+
+.dados {
+  color: #111f46;
+  margin: 1em;
+  padding: 1em;
+  max-width: 100%;
+  background-color: rgb(200, 204, 252, 0.7);
+  box-shadow: 10px 10px 8px rgb(212, 212, 244, 0.1);
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.galeria img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border: 4px solid black;
+  margin: 2px;
+}
+
+
+input[type=text],
+select {
+  width: 90%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#mensagem {
+  width: 87%;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #091023;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #131c31;
+}
+
+.contato div {
+  color: #111f46;
+  margin: 3em;
+  padding: 1em;
+  max-width: 55%;
+  background-color: rgb(200, 204, 252, 0.9);
+  box-shadow: 10px 10px 8px rgb(212, 212, 244, 0.1);
+}
+
+.contato h1 {
+  margin: 1.5em;
+  margin-left: calc(50% - 6em);
+}
+
+#gif {
+  margin-left: calc(50% - 20em);
+}
+
+.h1DaG {
+  margin: 2em;
+  margin-left: 50%;
+  color: #091023;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="pages/catalogo/index.html">Catalogo</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/regioes/index.html">Regioes</a></li>
+        </ul>
+    </div>
+    <header class="select">
+        <select name="pokemon" id="selectPokemon"></select>
+        <button id="btnBuscar"> Buscar </button>
+    </header>
+    <div class="container">
+        <div class="coluna-50">
+            <div class="informacoes">
+                <table>
+                    <tr>
+                        <th colspan="2" id="nome" class="titulo"></th>
+                    </tr>
+                    <tr>
+                        <td id="numero">Número</td>
+                        <td id="valorNumero" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="altura"> Altura</td>
+                        <td id="valorAltura" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="peso">Peso</td>
+                        <td id="valorPeso" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="geracao">Geração</td>
+                        <td id="valorGeracao" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="hp">Hp</td>
+                        <td id="valorHp" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="atk">Pontos de ataque</td>
+                        <td id="valorAtk" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="def">Pontos de defesa</td>
+                        <td id="valorDef" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="spatk"> Pontos de ataque especial</td>
+                        <td id="valorSpatk" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="spdef">Pontos de defesa especial</td>
+                        <td id="valorSpdef" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="speed">Pontos de velocidade</td>
+                        <td id="valorSpeed" class="coluna2"></td>
+                    </tr>
+                    <tr>
+                        <td id="evolucoes">Evoluções</td>
+                        <td id="valorEvolucoes" class="coluna2"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="coluna-50">
+            <div class="icons"></div>
+            <div class="carrossel-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
